@@ -1,3 +1,3 @@
-# RespApp
+# Post on FB pages
 
-Respond to your facebook page comments.
+Read the posts and reply directly to your FB pages from this simple meteor project.
