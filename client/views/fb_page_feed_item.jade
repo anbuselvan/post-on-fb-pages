@@ -1,0 +1,13 @@
+template(name='fb_page_feed_item')
+  .panel.panel-default
+    .panel-heading
+      #{message}
+    .panel-body
+      ul.list-group
+        each comments.data
+          +fb_page_feed_item_comment
+        li.list-group-item
+          .input-group
+            input#comment.form-control(data-id='{{id}}', type='text')
+            span.input-group-btn
+              button.btn.btn-default.add(type='button') Add Comment

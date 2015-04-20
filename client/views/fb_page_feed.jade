@@ -1,0 +1,19 @@
+template(name='fb_page_feed')
+  .container
+    .col-md-6
+      .pull-right
+        p Last update:
+          span(data-livestamp='{{lastUpdated}}')
+        .input-group
+          span.input-group-btn
+            button.btn.btn-default.refresh Refresh
+          select.form-control
+            option(value='m') Manual
+            option(value='5') Every 5 Minutes
+            option(value='10') Every 10 Minutes
+      span.clearfix
+      br
+      span.clearfix
+      each feed
+        if actions
+          +fb_page_feed_item

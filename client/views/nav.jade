@@ -1,0 +1,15 @@
+template(name='nav')
+  .navbar.navbar-default(role='navigation')
+    .navbar-header
+      a.navbar-brand(href='/') Respond App
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        +fb_pages
+      ul.nav.navbar-nav.navbar-right(style='margin-right: 100px;')
+        +fb_pic
+        +loginButtons

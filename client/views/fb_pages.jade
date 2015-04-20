@@ -1,0 +1,5 @@
+template(name='fb_pages')
+  if currentUser
+    each pages
+      li: a(href='/page/#{id}') #{name}
+
